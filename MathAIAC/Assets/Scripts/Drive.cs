@@ -52,6 +52,7 @@ public class Drive : MonoBehaviour
         float unityDistance = Vector3.Distance(tP, fP);
             Debug.Log("Distance:" + distance);
         Debug.Log("Unity Distance" + unityDistance);
+         
     }
 
     float autoSpeed = 0.1f;
@@ -81,7 +82,10 @@ public class Drive : MonoBehaviour
         {
             autoPilot = !autoPilot;
         }
-        if(autoPilot)
-            AutoPilot();
+        if (autoPilot)
+        {
+            
+                AutoPilot();
+        }
     }
 }
